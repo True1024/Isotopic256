@@ -110,6 +110,16 @@ HTMLActuator.prototype.getElement = function(n) {
         return mass + "Sn";
       case 256:
         return mass + "No";
+      case 512:
+        return mass + "Lr";
+      case 1024:
+        return mass + "Sg";
+      case 2048:
+        return mass + "Mt";
+      case 4096:
+        return mass + "Cn";
+      case 8192:
+        return mass + "Og";
       default:
         return mass + "?";
     }
@@ -135,7 +145,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   //if (tile.isDud)
     //classes.push("tile-isDud");
 
-  if (tile.value > 256) classes.push("tile-super");
+  if (tile.value > 8192) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
