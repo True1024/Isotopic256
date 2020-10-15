@@ -296,7 +296,7 @@ hr {
   height: 106.25px;
   margin-right: 15px;
   float: left;
-  border-radius: 100%;
+  border-radius: 50%;
   background: rgba(238, 228, 218, 0.35); }
   .grid-cell:last-child {
     margin-right: 0; }
@@ -383,7 +383,7 @@ hr {
   -moz-transition-property: -moz-transform;
   transition-property: transform; }
   .tile .tile-inner {
-    border-radius: 100%;
+    border-radius: 50%;
     background: #eee4da;
     text-align: center;
     font-weight: bold;
@@ -538,7 +538,45 @@ hr {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile-512 .element,
+  .tile.tile-512 .tile-inner {
+    color: #f9f6f2;
+    background: #edc850;
+    box-shadow: 0 0 30px 10px #edcf72, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-512 .tile-inner {
+        font-size: 25px; } }
   .tile-1024 .element,
+  .tile.tile-1024 .tile-inner {
+    color: #f9f6f2;
+    background: #edc53f;
+    box-shadow: 0 0 30px 10px #edcf72, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-1024 .tile-inner {
+        font-size: 15px; } }
+  .tile-2048 .element,
+  .tile.tile-2048 .tile-inner {
+    color: #f9f6f2;
+    background: #edc22e;
+    box-shadow: 0 0 30px 10px #edcf72, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-2048 .tile-inner {
+        font-size: 15px; } }
+  .tile-4096 .element,
+  .tile.tile-4096 .tile-inner {
+    color: #f9f6f2;
+    background: #888888;
+    box-shadow: 0 0 30px 10px #888888, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-4096 .tile-inner {
+        font-size: 15px; } }
+  .tile-8192 .element,
+  .tile.tile-8192 .tile-inner {
+    color: #f9f6f2;
+    background: #444444;
+    box-shadow: 0 0 30px 10px #444444, inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
+    @media screen and (max-width: 520px) {
+      .tile.tile-8192 .tile-inner {
+        font-size: 15px; } }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
     background: #3c3a32;
@@ -804,7 +842,7 @@ hr {
     height: 79.5px;
     margin-right: 10px;
     float: left;
-    border-radius: 100%;
+    border-radius: 50%;
     background: rgba(238, 228, 218, 0.35); }
     .grid-cell:last-child {
       margin-right: 0; }
